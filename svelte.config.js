@@ -9,6 +9,9 @@ const config = {
     adapter: adapter(),
     prerender: {
       entries: ['/[[lang]]']
+    },
+    paths: {
+      base: process.env.NODE_ENV === "production" ? "/resume-website" : "",
     }
   }
 };
