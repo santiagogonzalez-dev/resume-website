@@ -1,8 +1,6 @@
  const greetings = {
 	en: 'hello!',
-	de: 'hallo!',
-	fr: 'bonjour!',
-   es: 'hola!'
+  es: 'hola!'
 };
 
 export function load({ params }) {
