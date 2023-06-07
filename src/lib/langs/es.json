@@ -1,10 +1,10 @@
 {
-	"position": "desarrollador de software",
+	"position": "DESARROLLADOR DE SOFTWARE",
 	"experience": {
-		"title": "experiencia"
+		"title": "EXPERIENCIA"
 	},
 	"education": {
-		"title": "educación",
+		"title": "EDUCACIÓN",
 		"list": [
 			{
 				"date": "Con un poco de suerte",
@@ -14,7 +14,7 @@
 		]
 	},
 	"skills": {
-		"title": "Tecnologías usada",
+		"title": "TECNOLOGÍAS USADAS",
 		"description": "Herramientas que uso a diario. Lista entera",
 		"link": ["en mi portafolio", "https://www.santiagogonzalez.dev/about#technologies"]
 	}

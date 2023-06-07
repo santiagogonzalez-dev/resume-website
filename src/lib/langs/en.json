@@ -1,10 +1,10 @@
 {
-	"position": "software developer",
+	"position": "SOFTWARE DEVELOPER",
 	"experience": {
-		"title": "experience"
+		"title": "EXPERIENCE"
 	},
 	"education": {
-		"title": "education",
+		"title": "EDUCATION",
 		"list": [
 			{
 				"date": "Hopefully",
@@ -14,7 +14,7 @@
 		]
 	},
 	"skills": {
-		"title": "Skills",
+		"title": "SKILLS",
 		"description": "Some of the tools I use daily. Full list",
 		"link": ["in my portfolio", "https://www.santiagogonzalez.dev/about#technologies"]
 	}

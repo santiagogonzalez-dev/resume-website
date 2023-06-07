@@ -9,10 +9,10 @@
 	class="w-[min(210mm,100%)] h-[min(210mm,100%)] mx-auto py-[0.5in]
   px-[min(2cm,2rem)] text-gray-700"
 >
-	<header class="grid items-center grid-cols-1 lg:grid-cols-2 gap-3">
+	<header class="grid items-center grid-cols-1 sm:grid-cols-2 gap-3">
 		<main class="flex flex-col gap-4">
 			<h1 class="text-5xl font-extrabold">SANTIAGO GONZALEZ</h1>
-			<h2 class="uppercase font-extrabold">
+			<h2 class="font-extrabold">
 				{data.position}
 			</h2>
 		</main>
@@ -60,7 +60,7 @@
 								/>
 							</g>
 						</svg>
-						Github
+						GitHub
 					</a>
 				</li>
 			</ul>
@@ -68,14 +68,14 @@
 	</header>
 	<br />
 	<section class="experience">
-		<h3 class="font-bold uppercase text-3xl">
+		<h3 class="font-bold text-3xl">
 			{data.experience.title}
 		</h3>
 	</section>
 	<hr class="w-full border-gray-700" />
-	<div class="grid-cols-1 lg:grid-cols-2 grid mt-3 gap-3">
+	<div class="grid-cols-1 sm:grid-cols-2 grid mt-3 gap-3">
 		<section class="education">
-			<h3 class="font-bold uppercase text-3xl">{data.education.title}</h3>
+			<h3 class="font-bold text-3xl">{data.education.title}</h3>
 			<ol>
 				{#each data.education.list as job}
 					<li>{job.date}</li>
@@ -85,7 +85,7 @@
 			</ol>
 		</section>
 		<section class="skills">
-			<h3 class="font-bold uppercase text-3xl">{data.skills.title}</h3>
+			<h3 class="font-bold text-3xl">{data.skills.title}</h3>
 			<p>
 				{data.skills.description}
 				<a class="text-slate-60" rel="external" target="_blank" href={data.skills.link[1]}>{data.skills.link[0]}</a>
