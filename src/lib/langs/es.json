@@ -1,3 +1,22 @@
 {
-	"greeting": "Hola!"
+	"name": "Santiago Gonzalez",
+	"position": "desarrollador de software",
+	"experience": {
+		"title": "experiencia"
+	},
+	"education": {
+		"title": "educación",
+		"list": [
+			{
+				"date": "Con un poco de suerte",
+				"in": "Ingeniería en Sistemas",
+				"at": "UTN"
+			}
+		]
+	},
+	"skills": {
+		"title": "Tecnologías usada",
+		"description": "Herramientas que uso a diario. Lista entera",
+    "link": ["en mi portafolio", "https://www.santiagogonzalez.dev/about#technologies"]
+	}
 }
