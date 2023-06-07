@@ -88,7 +88,7 @@
 			<h3 class="font-bold uppercase text-3xl">{data.skills.title}</h3>
 			<p>
 				{data.skills.description}
-				<a class="text-slate-60"rel="external" target="_blank" href={data.skills.link[1]}>{data.skills.link[0]}</a>
+				<a class="text-slate-60" rel="external" target="_blank" href={data.skills.link[1]}>{data.skills.link[0]}</a>
 			</p>
 			<ol>
 				<li>React(NextJS)</li>
