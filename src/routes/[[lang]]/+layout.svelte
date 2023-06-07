@@ -1,8 +1,5 @@
-<script lang="ts">
-	import '$lib/styles/style.css';
+<script>
+	import '../../app.css';
 </script>
 
 <slot />
-
-<style>
-</style>
