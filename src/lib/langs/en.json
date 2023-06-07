@@ -1,5 +1,4 @@
 {
-	"name": "Santiago Gonzalez",
 	"position": "software developer",
 	"experience": {
 		"title": "experience"
@@ -17,6 +16,6 @@
 	"skills": {
 		"title": "Skills",
 		"description": "Some of the tools I use daily. Full list",
-    "link": ["in my portfolio", "https://www.santiagogonzalez.dev/about#technologies"]
+		"link": ["in my portfolio", "https://www.santiagogonzalez.dev/about#technologies"]
 	}
 }
