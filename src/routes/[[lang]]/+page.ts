@@ -8,7 +8,6 @@ interface Params {
 export async function load({ params }: { params: Params }) {
 	if (params.lang === 'es') {
 		return es;
-	} else {
-		return en;
 	}
+	return en;
 }
