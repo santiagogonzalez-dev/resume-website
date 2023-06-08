@@ -1,13 +1,22 @@
 {
 	"position": "SOFTWARE DEVELOPER",
 	"experience": {
-		"title": "EXPERIENCE"
+		"title": "EXPERIENCE",
+		"list": [
+			{
+				"position": "Frontend Developer",
+				"company": "Company Name",
+				"from_to": "Month 2000 - Month 2000",
+				"project": "Project Name(Client's Company - COUNTRY)",
+				"description": "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat."
+			}
+		]
 	},
 	"education": {
 		"title": "EDUCATION",
 		"list": [
 			{
-				"date": "Hopefully",
+				"date": "2023 - present",
 				"in": "Systems Engineering",
 				"at": "UTN"
 			}
@@ -15,7 +24,7 @@
 	},
 	"skills": {
 		"title": "SKILLS",
-		"description": "Some of the tools I use daily. Full list",
-		"link": ["in my portfolio", "https://www.santiagogonzalez.dev/about#technologies"]
+		"description": "Some of the tools I use daily.",
+		"link": ["Full list in my portfolio", "https://www.santiagogonzalez.dev/about#technologies"]
 	}
 }

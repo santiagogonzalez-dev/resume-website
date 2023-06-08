@@ -5,38 +5,22 @@
 	$: data = $page.data;
 </script>
 
-<div
-	class="w-[min(210mm,100%)] h-[min(210mm,100%)] mx-auto py-[0.5in]
-  px-[min(2cm,2rem)] text-gray-700"
->
-	<header class="grid items-center grid-cols-1 sm:grid-cols-2 gap-3">
-		<main class="flex flex-col gap-4">
-			<h1 class="text-5xl font-extrabold">SANTIAGO GONZALEZ</h1>
-			<h2 class="font-extrabold">
-				{data.position}
-			</h2>
-		</main>
-		<nav>
-			<ul class="grid gap-2 my-4">
+<main class="text-gray-700">
+	<header class="grid grid-cols-1 sm:grid-cols-2 place-content-center gap-4">
+		<hgroup class="flex flex-col gap-4">
+			<h1 class="text-5xl font-black">SANTIAGO GONZALEZ</h1>
+			<h2 class="text-2xl font-black">{data.position}</h2>
+		</hgroup>
+		<nav class="flex-1">
+			<ul class="grid gap-2 my-4 font-medium text-base">
 				<li>
-					<a class="flex items-center text-lg" target="_blank" rel="external" href="https://www.santiagogonzalez.dev">
+					<a class="inline-flex place-items-center" target="_blank" rel="external" href="https://www.santiagogonzalez.dev">
 						<img class="h-6 mr-2" src="{base}/logo-light.svg" alt="Personal logo" />
 						santiagogonzalez.dev
 					</a>
 				</li>
 				<li>
-					<a class="flex items-center text-lg" href="mailto:santiagogonzalezbogado@gmail.com">
-						<svg class="h-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-							<path
-								fill="currentColor"
-								d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44z"
-							/>
-						</svg>
-						Email
-					</a>
-				</li>
-				<li>
-					<a class="flex items-center text-lg" target="_blank" rel="external" href="https://www.linkedin.com/in/santiago-gonzalez-62557221b/">
+					<a class="inline-flex place-items-center" target="_blank" rel="external" href="https://www.linkedin.com/in/santiago-gonzalez-62557221b/">
 						<svg class="h-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 128 128">
 							<path
 								fill="currentColor"
@@ -47,7 +31,7 @@
 					</a>
 				</li>
 				<li>
-					<a class="flex items-center text-lg" target="_blank" rel="external" href="https://www.linkedin.com/in/santiago-gonzalez-62557221b/">
+					<a class="inline-flex place-items-center" target="_blank" rel="external" href="https://www.linkedin.com/in/santiago-gonzalez-62557221b/">
 						<svg class="h-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 128 128">
 							<g fill="currentColor">
 								<path
@@ -63,48 +47,69 @@
 						GitHub
 					</a>
 				</li>
+				<li>
+					<a class="inline-flex place-items-center" href="mailto:santiagogonzalezbogado@gmail.com">
+						<svg class="h-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path
+								fill="currentColor"
+								d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44z"
+							/>
+						</svg>
+						santiagogonzalezbogado@gmail.com
+					</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
 	<br />
-	<section class="experience">
-		<h3 class="font-bold text-3xl">
+	<section class="mt-2 space-y-2">
+		<h3 class="font-black text-3xl">
 			{data.experience.title}
 		</h3>
+		<ol>
+			{#each data.experience.list as experience}
+				<li class="mt-1 space-y-1 text-2xl font-bold">{experience.position}</li>
+				<li class="mt-1 space-y-1 text-2xl font-bold">{experience.company}, {experience.from_to}</li>
+				<li class="mt-1 space-y-1 text-xl font-bold">&mdash; {experience.project}</li>
+				<li class="mt-1 space-y-1 text-lg font-medium">{experience.description}</li>
+			{/each}
+		</ol>
 	</section>
-	<hr class="w-full border-gray-700" />
-	<div class="grid-cols-1 sm:grid-cols-2 grid mt-3 gap-3">
-		<section class="education">
-			<h3 class="font-bold text-3xl">{data.education.title}</h3>
+	<div class="grid grid-cols-1 sm:grid-cols-2 place-content-center gap-4 mt-6">
+		<section class="mt-2 space-y-2">
+			<h3 class="font-black text-3xl">{data.education.title}</h3>
 			<ol>
 				{#each data.education.list as job}
-					<li>{job.date}</li>
-					<li>{job.in}</li>
-					<li>{job.at}</li>
+					<li class="text-lg font-normal">{job.date}</li>
+					<li class="text-2xl font-black">{job.at}</li>
+					<li class="text-xl font-medium">{job.in}</li>
 				{/each}
 			</ol>
 		</section>
-		<section class="skills">
-			<h3 class="font-bold text-3xl">{data.skills.title}</h3>
-			<p>
+		<section class="mt-2 space-y-2">
+			<h3 class="font-black text-3xl">{data.skills.title}</h3>
+			<p class="font-medium text-xl">
 				{data.skills.description}
-				<a class="text-slate-60" rel="external" target="_blank" href={data.skills.link[1]}>{data.skills.link[0]}</a>
+				<a class="inline-flex place-items-center" rel="external" target="_blank" href={data.skills.link[1]}
+					>{data.skills.link[0]}
+					<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+						<path fill="currentColor" d="M14 3v2h3.59l-9.83 9.83l1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7Z" />
+					</svg>
+				</a>
 			</p>
-			<ol>
+			<ol class="text-lg font-medium columns-2 mt-2 space-y-2 list-disc list-inside">
 				<li>React(NextJS)</li>
 				<li>Svelte(SvelteKit)</li>
 				<li>Node</li>
 				<li>Git</li>
-				<li>Docker/Podman</li>
-				<li>Typescript/Javascript(ES6+)</li>
+				<li>Javascript(ES6+)</li>
+				<li>Typescript</li>
 				<li>CI/CD</li>
-				<li>SQL(SQLite, MariaDB, MySQL, PostgreSQL)</li>
-				<li>Python</li>
-				<li>Java</li>
+				<li>SQL</li>
 			</ol>
 		</section>
 	</div>
-</div>
+</main>
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -113,7 +118,22 @@
 		font-family: 'Manrope', sans-serif;
 	}
 
-	@page {
-		size: A4;
+	@media print {
+		@page {
+			size: A4;
+		}
+	}
+
+	main {
+		display: grid;
+		grid-template-rows: auto auto 1fr;
+		width: min(210mm, 100%);
+		min-height: min(297mm, 100vh);
+		margin-inline: auto;
+		padding-top: 0.5in;
+		padding-bottom: 0.5in;
+		padding-left: 1.2cm;
+		padding-right: 2.1cm;
+		outline: 1px gray solid;
 	}
 </style>

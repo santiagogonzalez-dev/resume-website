@@ -1,13 +1,22 @@
 {
 	"position": "DESARROLLADOR DE SOFTWARE",
 	"experience": {
-		"title": "EXPERIENCIA"
+		"title": "EXPERIENCIA",
+		"list": [
+			{
+				"position": "Frontend Developer",
+				"company": "Company Name",
+				"from_to": "Month 2000 - Month 2000",
+				"project": "Project Name(Client's Company - PAÍS)",
+				"description": "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat."
+			}
+		]
 	},
 	"education": {
 		"title": "EDUCACIÓN",
 		"list": [
 			{
-				"date": "Con un poco de suerte",
+				"date": "2023 - presente",
 				"in": "Ingeniería en Sistemas",
 				"at": "UTN"
 			}
@@ -15,7 +24,7 @@
 	},
 	"skills": {
 		"title": "TECNOLOGÍAS USADAS",
-		"description": "Herramientas que uso a diario. Lista entera",
-		"link": ["en mi portafolio", "https://www.santiagogonzalez.dev/about#technologies"]
+		"description": "Herramientas que uso a diario.",
+		"link": ["Lista entera en mi portafolio", "https://www.santiagogonzalez.dev/about#technologies"]
 	}
 }
