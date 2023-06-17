@@ -7,7 +7,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		prerender: {
-			entries: ['/[[lang]]', '/en', '/es']
+			entries: ['*', '/', '/[lang]', '/en', '/es']
 		}
 	}
 };
